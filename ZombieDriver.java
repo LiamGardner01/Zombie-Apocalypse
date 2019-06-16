@@ -31,12 +31,14 @@ public class ZombieDriver
 
 				for(int i = 0; i < add.length; i++)
 				{
+
 					creatures.add(addCreature(add[i], false));
 				}
 
 				String moves = sc.nextLine();
 
 				play(creatures, moves, size);
+
 			}
 			else
 			{
@@ -51,8 +53,11 @@ public class ZombieDriver
 
 	public Creature addCreature(String holder, boolean zombie)
 	{
-		int xValue = holder.charAt(1) - 48;
-		int yValue = holder.charAt(3) - 48;
+		holder = holder.replaceAll("\\(", "");
+		holder = holder.replaceAll("\\)", "");
+		String[] coordinates = holder.split(",");
+		int xValue = Integer.valueOf(coordinates[0]);
+		int yValue = Integer.valueOf(coordinates[1]);
 
 		return new Creature(zombie, xValue, yValue);
 		
@@ -65,10 +70,12 @@ public class ZombieDriver
 		ArrayList<Creature> c = new ArrayList<Creature>();
 		c.add(creatures.get(0));
 
-		for(int x = 0; x < creatures.size(); x++)
+		for(int x = 0; x < c.size(); x++)
 		{
 			if(c.get(x).getZombie())
 			{
+				System.out.println(c.get(x) + "\n\n");
+
 				for(int j = 0; j < moves.length(); j++)
 				{
 					if(moves.charAt(j) == 'U')
@@ -88,10 +95,15 @@ public class ZombieDriver
 						c.get(x).setXValue(c.get(x).getXValue() + 1);
 					}
 
+					System.out.println(c.get(x));
+
 					if(c.get(x).getYValue() < 0) c.get(x).setYValue(size-1);
 					if(c.get(x).getYValue() >= size) c.get(x).setYValue(0);
 					if(c.get(x).getXValue() < 0) c.get(x).setXValue(size-1);
-					if(c.get(x).getXValue() >= size) c.get(x).setXValue(0);  	
+					if(c.get(x).getXValue() >= size) c.get(x).setXValue(0);
+
+					System.out.println(c.get(x));
+					System.out.println();  	
 
 					for(int i = 0; i < creatures.size(); i++)
 					{
