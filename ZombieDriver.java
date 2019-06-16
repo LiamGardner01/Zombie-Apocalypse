@@ -74,7 +74,6 @@ public class ZombieDriver
 		{
 			if(c.get(x).getZombie())
 			{
-				System.out.println(c.get(x) + "\n\n");
 
 				for(int j = 0; j < moves.length(); j++)
 				{
@@ -95,15 +94,10 @@ public class ZombieDriver
 						c.get(x).setXValue(c.get(x).getXValue() + 1);
 					}
 
-					System.out.println(c.get(x));
-
 					if(c.get(x).getYValue() < 0) c.get(x).setYValue(size-1);
 					if(c.get(x).getYValue() >= size) c.get(x).setYValue(0);
 					if(c.get(x).getXValue() < 0) c.get(x).setXValue(size-1);
-					if(c.get(x).getXValue() >= size) c.get(x).setXValue(0);
-
-					System.out.println(c.get(x));
-					System.out.println();  	
+					if(c.get(x).getXValue() >= size) c.get(x).setXValue(0); 	
 
 					for(int i = 0; i < creatures.size(); i++)
 					{
