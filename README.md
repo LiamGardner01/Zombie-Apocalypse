@@ -30,4 +30,8 @@ For example:
 (2,1)
 (0,1)(1,2)(3,1)
 DLUURR
-``` 
+```
+Expected output:    
+Zombies Scored: 3  
+Zombie Positions:  
+[(3,0), (2,1), (1,0), (0,0)]
