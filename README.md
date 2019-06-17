@@ -1,6 +1,6 @@
 # ZombieDriver
 
-The ZombieApocalypse is a programme written in Java that allows a user by altering the input.txt file to create a single zombie at the start of the game and many creatures. The user may also alter the board size and the movements that a zombie can make.
+The ZombieApocalypse is a programme written in Java that allows a user by altering the input.txt file to create a single zombie at the start of the game and many creatures. The user may also alter the board size and the movements that a zombie can make.  
 When a zombie reaches a square that a creature is on, the creature is converted and the zombie's gain 1 point. The newly converted zombie will follow the movements commands when the zombie before it has completed its movement.
 
 ## Installation
