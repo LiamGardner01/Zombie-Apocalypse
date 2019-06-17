@@ -10,10 +10,10 @@ The programme was constructed using JDK.
 ## Usage
 
 To run this project use the following commands:
-
+```
 javac ZombieDriver.java   
 java ZombieDriver
-
+```
 Additional tests can be added by altering the input textfile.
 
 ## Input Text File
@@ -32,7 +32,9 @@ For example:
 (0,1)(1,2)(3,1)
 DLUURR
 ```
-### Expected output:    
+### Expected output:
+```    
 Zombies Scored: 3  
 Zombie Positions:  
 [(3,0), (2,1), (1,0), (0,0)]
+```
