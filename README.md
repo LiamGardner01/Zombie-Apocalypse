@@ -25,9 +25,9 @@ X                        - Where X is an integer and represents the size of the 
 URLD                     - Where U is up, R is right, L is left and D is down. There is no limit to the number of commands.  
 
 For example:  
-'''
+```
 4  
 (2,1)
 (0,1)(1,2)(3,1)
 DLUURR
-'''  
+``` 
