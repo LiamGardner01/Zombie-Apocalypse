@@ -18,12 +18,13 @@ Additional tests can be added by altering the input textfile.
 
 ## Input Text File
 
-The input.txt file is in the following format:  
+The input.txt file is in the following format:
+```  
 X                        - Where X is an integer and represents the size of the board.  
 (X,Y)                    - Where X is the x-coordinate of the zombie, and y is the y-coordinate of the zombie. Only one zombie may be present to begin with.  
 (X,Y), (X,Y), ..., (X,Y) - Where X is the x-coordinate of a creature, and y is the y-coordinate of a creature.  
 URLD                     - Where U is up, R is right, L is left and D is down. There is no limit to the number of commands.  
-
+```
 For example:  
 ```
 4  
